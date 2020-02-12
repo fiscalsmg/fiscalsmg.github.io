@@ -1,0 +1,131 @@
+#nav {
+    margin-top: 0%;
+    margin: 10px 0;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+}
+
+#carrusel{
+    padding: 0;
+  margin: 0; 
+}
+#menu{
+    color:#D7C8C1;
+    transition: all 1s linear;
+}
+.card-img-top{
+    transition: all 0.5s ease;
+}
+.card-img-top:hover{
+    transform: translate(-5px,-10px);
+    box-shadow: 5px 2px 10px rgb(5, 5, 5);
+}
+#menu.azul{
+
+    background-color:white;
+    color:black;
+}
+#menu.azul a{
+    color: black;
+}
+.estilonav a:hover{
+    background: rgba(173, 8, 8, 0.1);
+}
+
+.estilonav a{
+    color: #ffffff;
+}
+.estilotrabajo a{
+    color: black;
+}
+.estilotrabajo a:hover{
+    /*background: rgba(173, 8, 8, 0.1);*/
+    color: blueviolet;
+
+}
+.op{
+   opacity: .9;
+}
+
+.content-all{
+    
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all .3s ;
+    
+}
+
+.parrafo{
+    position: absolute;
+    transition: all .3s;
+    transform: scale(1.5);
+    opacity: 0;
+}
+.parrafo:hover{
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+    
+}
+
+.content-all:hover{
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+    background-color:rgb(48, 40, 40);
+    opacity:0.6;
+}
+
+
+/*.content-all:before{ 
+position: absolute;
+top:335px; 
+left:20px;
+content:""; 
+width:0%; 
+height:3px; 
+background:red;
+transition:all .3s ease;
+} 
+.content-all:after{ 
+ position: absolute; 
+ top:10px; 
+ right:20px; 
+ content:""; 
+ width:0%; 
+ height:3px; 
+ background:red;
+  transition:all .3s ease;
+  } 
+
+.content-all:hover:before{ 
+ width: 90%;
+  }
+.content-all:hover:after {
+    width: 90%;
+  }
+ .content-all:hover,.content-all:hover{
+ transform:translateX(0%); 
+ transition:all .3s ease;
+  }
+.content-all:hover{
+ background-size: 110% 110%;
+ transition:all .5s ease;
+
+}*/
+
+
+
+
+
+
+
+footer{
+    padding: 40px 0;
+    background: rgb(134, 145, 148);
+}
+hr{
+    
+}

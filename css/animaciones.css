@@ -1,0 +1,117 @@
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;   
+ font-family: sans-serif;
+
+}
+body{
+    background: rgb(56, 53, 53); 
+}
+
+.container-all{
+    max-width: 1000px;
+    margin:auto;
+    margin-top: 100px;
+
+}
+
+.container-box{
+display: flex;
+flex-wrap: wrap;/*cajas alado*/
+}
+/*cambiar color a etiquetas a*/
+.container-box a{
+    text-decoration: none;
+    color:black;
+}
+
+.box{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    /*padre recuadro blanco */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; /*manita*/
+    margin: 20px;
+}
+.box:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px rgba(255, 255, 255, 0.5); /*pequeña sombra al fondo*/
+}
+
+
+.box .icono, 
+.box h4,
+.box p{
+    position: relative;
+    /* no tapar texto*/
+    z-index: 1;/*por encima de todo*/
+transition: all 300ms;
+}
+
+.box .icono{
+    font-size: 40px;
+    color: rgb(24,211,124);
+    /*icono mas pequeño*/
+
+    /*posicion central*/
+    transform: translateY(30px);
+}
+.box:hover .icono{
+color:white;
+font-size: 30px;
+transform: translateY(0);/*posicion normal*/
+
+}
+.box:hover h4{
+    transform: translateY(0);
+    color: white;
+}
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+}
+.box h4,
+.box p {
+    margin-top: 10px;
+}
+
+.box h4{
+    font-size: 30px;
+    transform: translateY(30px);
+
+}
+.box p{
+    font-size: 14px;
+    /*ocultar texto*/
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+
+/*efecto*/
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    /*hijo*/
+    position: absolute;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(255, 153, 0),rgb(255, 72, 0)); /*color degradado*/
+}
+ .box:hover .background-hover{
+     /*background-hover circulo rojo*/
+     width: 400px;
+     height: 400px;
+     top:-70px;
+     left:-70;
+ }

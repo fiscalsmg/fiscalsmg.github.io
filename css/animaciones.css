@@ -13,6 +13,7 @@ body{
     max-width: 1000px;
     margin:auto;
     margin-top: 100px;
+    justify-content: center;
 
 }
 
@@ -112,6 +113,58 @@ transform: translateY(0);/*posicion normal*/
      /*background-hover circulo rojo*/
      width: 400px;
      height: 400px;
+     /*posicion del background*/
      top:-70px;
-     left:-70;
+     left:-70px;
  }
+
+ /* cambiar de color de las diferentes cajas*/
+
+ /* box1*/
+ .box1 .icono{
+    color: #3dc315;
+ }
+.box1 .background-hover{
+    background: linear-gradient(to bottom, #3dc315,#fdb42a); /*color degradado*/
+}
+
+ /* box2*/
+ .box2 .icono{
+    color: #15b7c3;
+ }
+.box2 .background-hover{
+    background: linear-gradient(to bottom, #15b7c3,#fd2aeb); /*color degradado*/
+     /*posicion del background*/
+     top:-170px;
+     left:-250px;
+}
+
+/* box3*/
+.box3 .icono{
+    color: #c3151e;
+ }
+.box3 .background-hover{
+    background: linear-gradient(to bottom, #c3151e,#742afd); /*color degradado*/
+     /*posicion del background*/
+     top:170px;
+     left:500px;
+}
+
+/* box4*/
+.box4 .icono{
+    color: #154cc3;
+ }
+.box4 .background-hover{
+    background: linear-gradient(to bottom, #154cc3,#2afd93); /*color degradado*/
+     /*posicion del background*/
+     top:-170px;
+     left:500px;
+}
+
+/* box5*/
+.box5 .icono{
+    color: #c315494b;
+ }
+.box5 .background-hover{
+    background: linear-gradient(to bottom, #c315494b,#030303); /*color degradado*/
+}

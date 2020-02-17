@@ -47,37 +47,51 @@
 .op{
    opacity: .9;
 }
-/*estilo cards*/
-.container-box{
-    display: flex;
+/*--------*/
+/* oculta texto dentro de la card*/
+.estiloCard:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.5); /*pequeña sombra al fondo*/
 }
-.box{
-   
-    background: #fff;
-    text-align: center;
-    /*padre recuadro blanco */
+.estiloCard{
     position: relative;
     overflow: hidden;
     cursor: pointer; /*manita*/
+    margin: 20px;
 }
-.box .background-hover{
+.estiloCard p{
+    transform: translateY(100px);
+    opacity: 0;
+}
+.estiloCard:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color:white;
+}
+.estiloCard p,
+.estiloCard h5{
+    position: relative;
+    /* no tapar texto*/
+    z-index: 1;/*por encima de todo*/
+transition: all 300ms;
+}
+.estiloCard:hover img{
+   opacity: .8;
+}
+
+.estiloCard .boxCard{
     background: red;
     position: absolute;
-    top: 250%;
-    left: -170%;
+    top: 250px;
+    left: -170px;
     /*hijo*/
     position: absolute;
+    border-radius: 100%;
     transition: all 300ms;
-    background: linear-gradient(to bottom, rgb(255, 153, 0),rgb(255, 72, 0)); /*color degradado*/
-    opacity: .2;
-
-}
-.box:hover{
-    transform: translate(5px, -5px);
-    box-shadow: -10px 10px 20px -10px rgba(250, 3, 3, 0.5); /*pequeña sombra al fondo*/
+    background: linear-gradient(to bottom, rgb(0, 255, 98),rgb(76, 0, 255)); /*color degradado*/
 }
 
-.box:hover .background-hover{
+.estiloCard:hover .boxCard{
     /*background-hover circulo rojo*/
     width: 400px;
     height: 400px;
@@ -85,44 +99,7 @@
     top:-70px;
     left:-70px;
 }
-.container-all{
-    max-width: 1000px;
-}
-/*texto card*/
-.box h4,
-.box p{
-    position: relative;
-    /* no tapar texto*/
-    z-index: 1;/*por encima de todo*/
-transition: all 300ms;
-}
-
-.box:hover h4{
-    transform: translateY(0);
-    color: white;
-}
-.box:hover p{
-    transform: translateY(0);
-    opacity: 1;
-    color: white;
-}
-.box h4,
-.box p {
-    margin-top: 10px;
-}
-
-.box h4{
-    font-size: 30px;
-    transform: translateY(30px);
-
-}
-.box p{
-    font-size: 14px;
-    /*ocultar texto*/
-    transform: translateY(100px);
-    opacity: 0;
-}
-
+/* footer */
 footer{
     padding: 40px 0;
     background: rgb(134, 145, 148);

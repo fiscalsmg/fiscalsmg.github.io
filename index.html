@@ -144,48 +144,38 @@
             </div>
         </div>
         <hr>
-        <!-- Galeria de imagenes-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-4">
-                    <div class="card text-white estiloCard">
-                        <img src="imag/work3.jpg" class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="boxCard"></div>
+        <!--Podras encontrar el contenido aqui-->
+        <section>
+            <div class="container">
+                <div class="card-columns" id="galeria">
+                    <div class="card">
+                        <a href="#" data-toggle="modal" data-target="#exampleModal">
+                            <img src="imag/galeria/jupiter.jpg" alt="" class="card-img-top">
+                        </a>
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" class="close mr-3" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <!--Modal con texto-->
+                            <div class="card bg-dark text-white">
+                                <img src="imag/galeria/jupiter.jpg" alt="" class=" card-img img-fluid rounded op">
 
-                    <div class="card text-white estiloCard">
-                        <img src="imag/work3.jpg" class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="boxCard"></div>
-                    </div>
-
-                    <div class="card text-white estiloCard">
-                        <img src="imag/work3.jpg" class="card-img img-fluid" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="boxCard"></div>
                     </div>
                 </div>
-
-
             </div>
-        </div>
-       
-
-        <!--Podras encontrar el contenido aqui-->
-      
+        </section>
 
         <!--footer-->
     </div>

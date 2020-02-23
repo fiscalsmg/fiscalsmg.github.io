@@ -8,52 +8,26 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
 
-    <script type="text/javascript" src="js/JaS.js"></script>
-    <title>Document</title>
+    <title>Fis</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <!-- nav
-                 .bg-transparent
-                  d-md-block
-
-
-                   <div class="col-xs-12 col-sm-12 col-md-12 fixed-top" id="menu">
-                <h2 class="text-center">Pagina de prueba</h2>
-                <ul class=" estilonav nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-            -->
-            <div class="col fixed-top" id="menu">
-
-                <nav class="navbar bg-dark navbar-expand-sm">
+            <!--Navbar-->
+            <div class="col fixed-top " id="menu">
+                <nav class="navbar navbar-expand-sm navbar-light">
                     <a class="navbar-brand" href="index.html">
-                        <img src="imag/universe.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                        Universe
+                        <img src="imag/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Logo Empresa
                     </a>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler" id="nav-button" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
-                    <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
-                        <div class="navbar-nav estilonav nav">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                        <lu class="navbar-nav estilonav">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">Active</a>
                             </li>
@@ -66,28 +40,30 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Disabled</a>
                             </li>
-                        </div>
+                        </lu>
                     </div>
                 </nav>
             </div>
             <hr>
-            <!--carrusel-->
+            <!--carrusel
+                d-none d-sm-block ocultar a pantalla pequeña
+            -->
             <div class="col" id="carrusel">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="carousel-caption d-none d-md-block justify-content-between">
+                            <div class="carousel-caption d-none d-sm-block">
                                 <h5 class="h2">First slide label</h5>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                 <button type="button" class="btn btn-outline-warning text-white">Warning</button>
                             </div>
-                            <img src="imag/fondonav2.jpg" class="d-block w-100 op" alt="..." class="img-fluid">
+                            <img src="imag/fondo" class="d-block w-100 op img-fluid" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="imag/fondonav2.jpg" class="d-block w-100 op" alt="...">
+                            <img src="imag/fondo" class="d-block w-100 op" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="imag/fondonav2.jpg" class="d-block w-100 op" alt="...">
+                            <img src="imag/fondo" class="d-block w-100 op" alt="...">
                         </div>
                     </div>
                 </div>
@@ -96,7 +72,7 @@
         <hr>
         <!-- presentacion -->
         <div class="row justify-content-center mt-5 ">
-            <div class="col">
+            <div class="col-12 col-sm-12">
                 <div class="card w-100 border-0">
                     <div class="card-body text-center">
                         <h5 class="card-title mt-5">Card title</h5>
@@ -150,7 +126,7 @@
         <!-- our -->
         <div class="row">
             <div class="col">
-                <h2 class="text-center">Galeria de imagenes</h2>
+                <h1 class="text-center display-4 my-4">Galeria de imagenes</h1>
                 <ul class="estilotrabajo nav nav-justified">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Active</a>
@@ -167,12 +143,33 @@
                 </ul>
             </div>
         </div>
-        <!-- Galeria de imagenes -->
-        <div class="container container-all">
-            <div class="row container-box">
-                <div class="col">
+        <hr>
+        <!-- Galeria de imagenes
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
                     <div class="card text-white estiloCard">
-                        <img src="imag/work3.jpg" class="card-img img-fluid imagencard" alt="...">
+                        <img src="imag/work3.jpg" class="card-img img-fluid" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="boxCard"></div>
+                    </div>
+
+                    <div class="card text-white estiloCard">
+                        <img src="imag/work3.jpg" class="card-img img-fluid" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="boxCard"></div>
+                    </div>
+
+                    <div class="card text-white estiloCard">
+                        <img src="imag/work3.jpg" class="card-img img-fluid" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -182,100 +179,56 @@
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card text-white estiloCard">
-                        <img src="imag/work3.jpg" class="card-img img-fluid imagencard" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="boxCard"></div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card text-white estiloCard">
-                        <img src="imag/work3.jpg" class="card-img img-fluid imagencard" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="boxCard"></div>
-                    </div>
-                </div>
 
             </div>
         </div>
+        footer-->
+
+        <!--Podras encontrar el contenido aqui-->
+        <section>
+            <div class="container">
+                <div class="card-columns" id="galeria">
+                    <div class="card">
+                        <a href="#" data-toggle="modal" data-target="#exampleModal">
+                            <img src="imag/galeria/jupiter.jpg" alt="" class="card-img-top">
+                        </a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" class="close mr-3" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <!--Modal con texto-->
+                            <div class="card bg-dark text-white">
+                                <img src="imag/galeria/jupiter.jpg" alt="" class=" card-img img-fluid rounded op">
+
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--footer-->
-        <footer class="row text-center d-flex justify-content-center mt-5">
-            <div class="col-md-2 mb-3">
-                <h6 class="text-uppercase">
-                    <a href="#!"> AAAAAAA</a>
-                </h6>
-            </div>
-            <div class="col-md-2 mb-3">
-                <h6 class="text-uppercase">
-                    <a href="#!"> BBBBB</a>
-                </h6>
-            </div>
-            <div class="col-md-2 mb-3">
-                <h6 class="text-uppercase">
-                    <a href="#!"> AAAAAAA</a>
-                </h6>
-            </div>
-            <div class="col-md-2 mb-3">
-                <h6 class="text-uppercase">
-                    <a href="#!"> AAAAAAA</a>
-                </h6>
-            </div>
-            <div class="col-md-2 mb-3">
-                <h6 class="text-uppercase">
-                    <a href="#!"> AAAAAAA</a>
-                </h6>
-            </div>
-            <hr class="w-100 clearfix d-md-none">
-
-            <div class="row d-flex text-center justify-content-center  mb-md-0 mb-4">
-                <div class="col-md-8 col-12 mt-5">
-                    <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur.</p>
-                </div>
-            </div>
-            <div class="row pb-3">
-                <div class="col-md-12">
-                    <img src="" alt="">
-                    <label for="">Facebook</label>
-                </div>
-                <div class="col-md-12">
-                    <img src="" alt="">
-                    <label for="">Twitter</label>
-                </div>
-            </div>
-
-        </footer>
     </div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50 mt-5"> 
+        <div class="container-fluid text-center">
+            <small>Copyright &copy; Fis Website</small>
+        </div>
+    </footer>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <script>
-        $(window).scroll(function () {
-            if ($("#menu").offset().top > 56) {
-                $("#menu").addClass("azul");
+    <script src="js/JaS.js"></script>
 
-                // $("#menu").css( 'background-color', 'white', 'color');
-            } else {
-                $("#menu").removeClass("azul");
-            }
-
-
-        });
-    </script>
 </body>
 
 </html>

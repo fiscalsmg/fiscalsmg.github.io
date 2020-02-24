@@ -48,15 +48,6 @@
     }
     
   }
-/*@media(max-width: 767px){
-    .navbar{
-        background: transparent;
-       /* background: linear-gradient(to bottom, rgb(63, 65, 64),rgb(117, 95, 168));
-    }
-    .estilonav a{
-        color: black;
-    }
-}*/
 
 .estilonav a:hover{
     background: rgba(127, 169, 233, 0.1);
@@ -76,15 +67,13 @@
     color: rgb(226, 153, 43);
 
 }
-
+/*animacion de galeria de imagenes*/
+@keyframes mover{
+    0%{
+        transform: translate(100%);
+    }
+}
 .op{
    opacity: .9;
 }
 /*--------*/
-/* footer */
-footer{
-    padding: 40px 0;
-}
-#sticky-footer {
-    flex-shrink: none;
-  }

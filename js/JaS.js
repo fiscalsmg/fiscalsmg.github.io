@@ -5,17 +5,17 @@ $(window).scroll(function () {
 
     } else {
         $("#menu").removeClass("azul");
-        
+
     }
 
 
 });
 
-window.onload=function(){
-   // document.getElementById('navbarTogglerDemo01').onclick=clic();
-   document.getElementById('nav-button').addEventListener("click",clic);
+window.onload = function () {
+    // document.getElementById('navbarTogglerDemo01').onclick=clic();
+    document.getElementById('nav-button').addEventListener("click", clic);
 }
-function clic (){         
+function clic() {
     document.getElementById('menu').classList.add("celNav")
     //document.getElementById('menu').style.cssText='background:linear-gradient(to bottom, rgb(63, 65, 64),rgb(117, 95, 168)); color: black';
     //document.getElementById('navbarTogglerDemo01').addClass
@@ -24,11 +24,13 @@ function clic (){
     //document.getElementById('navbarTogglerDemo01').style.backgroundColor = "black";
 }
 
-var imagenes=[1,2,3,4]; //arreglo de imagenes
-var galeria=document.getElementById('galeria');//todo el div
+//galria de imagenes
+var imagenes = [1, 2, 3, 4]; //arreglo de imagenes
+var galeria = document.getElementById('galeria');//todo el div
 //ciclo 
-for(img of imagenes){
-    galeria.innerHTML+=`<div class="card">
+for (img of imagenes) {
+    galeria.innerHTML += `
+    <div class="card" id="animado">
     <a href="#" data-toggle="modal" data-target="#id${img}">
         <img src="imag/galeria/${img}.jpg" alt="" class="card-img-top">
     </a>
@@ -52,5 +54,17 @@ for(img of imagenes){
             </div>
         </div>
     </div>
-</div>`  
+</div>`
 }
+
+/*scroll*/
+window.addEventListener('scroll', function () {
+    let animacion = document.getElementById('animado');
+    let posicionOnj1 = animacion.getBoundingClientRect().top;
+    console.log(posicionOnj1);
+    let tamPantalla = window.innerHeight / 2; /*determina la posicion de la imagen y hace el movimiento*/
+
+    if (posicionOnj1 < tamPantalla) {
+        animacion.style.animation = 'mover 1s ease-out';
+    }
+}) 

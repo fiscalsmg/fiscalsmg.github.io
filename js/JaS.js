@@ -67,4 +67,21 @@ window.addEventListener('scroll', function () {
     if (posicionOnj1 < tamPantalla) {
         animacion.style.animation = 'mover 1s ease-out';
     }
-}) 
+})
+
+function apareceScroll() {
+    var html = document.getElementsByTagName("body")[0];
+    var elementoAparece = document.getElementsByClassName("aparece");
+    document.addEventListener("wheel", function () {
+        var topeVent = html.scrollTop;
+        for (i = 0; i < elementoAparece.length; i++) {
+            var topeAparece = elementoAparece[i].offsetTop;
+            if (topeVent > topeAparece - 400) {
+                elementoAparece[i].style.opacity = 1;
+            }
+        }
+    })
+}
+apareceScroll();
+
+    

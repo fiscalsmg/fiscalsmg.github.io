@@ -156,12 +156,16 @@
 
     <div class="container">
         <section>
-            <div class="card-columns" id="galeria">
-                <div class="card" id="animado">
+            <div class="card-columns contenedor-imagenes" id="galeria">
+                <div class="card imagen">
                     <a href="#" data-toggle="modal" data-target="#exampleModal">
                         <img src="imag/galeria/jupiter.jpg" alt="" class="card-img-top">
+                        <div class="overlay">
+                            <h2>Ejemplo galeria</h2>
+                        </div>
                     </a>
                 </div>
+
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -171,7 +175,7 @@
                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                         <!--Modal con texto-->
                         <div class="card bg-dark text-white">
-                            <img src="imag/galeria/jupiter.jpg" alt="" class="card-img img-fluid rounded op aparece">
+                            <img src="imag/galeria/jupiter.jpg" alt="" class="card-img img-fluid rounded op">
 
                             <div class="card-img-overlay">
                                 <h5 class="card-title">Card title</h5>
@@ -183,16 +187,17 @@
                     </div>
                 </div>
             </div>
+
         </section>
     </div>
 
 
     <!--footer section-final-->
-    <div class="container-fluid text-center">
-        <footer id="sticky-footer" class="py-4 bg-dark text-white-50 mt-5">
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50 mt-5">
+        <div class="container-fluid text-center">
             <small>Copyright &copy; Fis Website</small>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/JaS.js"></script>

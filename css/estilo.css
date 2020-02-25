@@ -76,6 +76,7 @@
 .op{
    opacity: .9;
 }
+
 .aparece{
     opacity: 0;
     transform: all 0.5s;

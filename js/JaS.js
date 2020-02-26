@@ -25,14 +25,14 @@ function clic() {
 }
 
 //galria de imagenes
-var imagenes = [1, 2, 3, 4]; //arreglo de imagenes
+var imagenes = [1, 2, 3]; //arreglo de imagenes
 var galeria = document.getElementById('galeria');//todo el div
 //ciclo 
 for (img of imagenes) {
     galeria.innerHTML += `
     <div class="card" id="animado">
     <a href="#" data-toggle="modal" data-target="#id${img}">
-        <img src="imag/galeria/${img}.jpg" alt="" class="card-img-top">
+        <img src="imag/${img}.jpg" alt="" class="card-img-top">
     </a>
 </div>
 <!-- Modal -->
@@ -44,7 +44,7 @@ for (img of imagenes) {
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <!--Modal con texto-->
         <div class="card bg-dark text-white">
-            <img src="imag/galeria/${img}.jpg" alt="" class=" card-img img-fluid rounded op">
+            <img src="imag/${img}.jpg" alt="" class=" card-img img-fluid rounded op">
 
             <div class="card-img-overlay">
                 <h5 class="card-title">Card title</h5>

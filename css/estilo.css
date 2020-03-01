@@ -25,7 +25,7 @@
 }
 /*estilo del nav en navegador */
 #menu.azul{
-    background: linear-gradient(to bottom, rgb(15, 15, 15),rgb(88, 90, 94)); /*color degradado*/
+    background: linear-gradient(to bottom, rgb(105, 95, 95),rgb(230, 232, 235)); /*color degradado*/
     
 }
 /*cambia colo de letra al hacer scrool*/
@@ -39,7 +39,7 @@
 
 /*estilo nav en el celular*/
 .celNav{
-    background: linear-gradient(to bottom, rgb(15, 15, 15),rgb(88, 90, 94));/*color degradado*/
+    background: linear-gradient(to bottom,rgb(105, 95, 95),rgb(230, 232, 235));/*color degradado*/
     
 }
 

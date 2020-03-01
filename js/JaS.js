@@ -1,4 +1,5 @@
 
+/*efecto navbar*/
 $(window).scroll(function () {
     if ($("#menu").offset().top > 56) {
         $("#menu").addClass("azul");
@@ -12,27 +13,26 @@ $(window).scroll(function () {
 });
 
 window.onload = function () {
-    // document.getElementById('navbarTogglerDemo01').onclick=clic();
     document.getElementById('nav-button').addEventListener("click", clic);
 }
 function clic() {
     document.getElementById('menu').classList.add("celNav")
-    //document.getElementById('menu').style.cssText='background:linear-gradient(to bottom, rgb(63, 65, 64),rgb(117, 95, 168)); color: black';
-    //document.getElementById('navbarTogglerDemo01').addClass
-    //document.getElementById('navbarTogglerDemo01').style.color='black';
-    //$("#menu").addClass("azul");
-    //document.getElementById('navbarTogglerDemo01').style.backgroundColor = "black";
 }
-
-//galria de imagenes
-var imagenes = [1, 2, 3]; //arreglo de imagenes
-var galeria = document.getElementById('galeria');//todo el div
-//ciclo 
-for (img of imagenes) {
-    galeria.innerHTML += `
-    <div class="card" id="animado">
+/*/efecto navbar*/
+/**Genera imagenes en galeria */
+function generar_imagenes() {
+    //galria de imagenes
+    var imagenes = [1, 2, 3]; //arreglo de imagenes
+    var galeria = document.getElementById('galeria');//todo el div
+    //ciclo 
+    for (img of imagenes) {
+        galeria.innerHTML += `
+    <div class="card imagen" id="animado">
     <a href="#" data-toggle="modal" data-target="#id${img}">
         <img src="imag/${img}.jpg" alt="" class="card-img-top">
+        <div class="overlay">
+            <h2>Ejemplo galeria</h2>
+        </div>
     </a>
 </div>
 <!-- Modal -->
@@ -55,33 +55,45 @@ for (img of imagenes) {
         </div>
     </div>
 </div>`
+    }
 }
-
-/*scroll*/
+generar_imagenes();
+/*/Generar imagenes en galeria*/
+/*scroll
 window.addEventListener('scroll', function () {
     let animacion = document.getElementById('animado');
     let posicionOnj1 = animacion.getBoundingClientRect().top;
     console.log(posicionOnj1);
-    let tamPantalla = window.innerHeight / 2; /*determina la posicion de la imagen y hace el movimiento*/
+    let tamPantalla = window.innerHeight / 2; //determina la posicion de la imagen y hace el movimiento
 
     if (posicionOnj1 < tamPantalla) {
         animacion.style.animation = 'mover 1s ease-out';
+       // $("#animado").fadeIn(1000);
     }
-})
+  });
+  
+function goToId(idName) {
 
-function apareceScroll() {
-    var html = document.getElementsByTagName("body")[0];
-    var elementoAparece = document.getElementsByClassName("aparece");
-    document.addEventListener("wheel", function () {
-        var topeVent = html.scrollTop;
-        for (i = 0; i < elementoAparece.length; i++) {
-            var topeAparece = elementoAparece[i].offsetTop;
-            if (topeVent > topeAparece - 400) {
-                elementoAparece[i].style.opacity = 1;
-            }
-        }
-    })
-}
-apareceScroll();
+    if ($("#" + idName).length) {
 
+        var target_offset = $("#" + idName).offset();
+
+        var target_top = target_offset.top;
+
+        $('html,body').animate({ scrollTop: target_top }, { duration: "slow" });
+
+    }
     
+}
+})*/
+
+$(window).scroll(function(event) {
+   // var scrollLeft = $(window).scrollLeft();
+   let animacion = document.getElementById('animado');
+   let tamPantalla = window.innerHeight / 2;
+   let posicionOnj1 = animacion.getBoundingClientRect().top;
+    var scrollTop = $(window).scrollTop();
+    console.log("posicion "+posicionOnj1);
+    console.log("tamPan "+tamPantalla);
+    console.log("Vertical "+scrollTop);
+})

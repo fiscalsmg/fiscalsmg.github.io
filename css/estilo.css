@@ -118,3 +118,13 @@
 .hr-estilo {
     border-top: 2px solid rgb(163, 161, 161)
 }
+
+/*Section 3*/
+.cardS3{
+ width: 150px;   
+ height: 150px;
+ display:block; /*Centrar imagen*/
+ margin:auto; /*centrar imagen*/
+ object-fit: cover; /*imagen corresponde al div*/
+    
+}

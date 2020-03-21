@@ -300,7 +300,6 @@ h2{
 	height: 30px;
 	margin: 0;
 	padding: 0;
-
     }
     footer .footerIconos ul{ 
         list-style: none;
@@ -310,10 +309,12 @@ h2{
         
     }
     footer .footerIconos ul li{
-	
 	margin: 0;
 	padding: 0;
-
+    }
+    #menu.azul{
+        background: rgb(156, 116, 97);
+        padding: 10px;
     }
     
 }

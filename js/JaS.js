@@ -1,4 +1,4 @@
-/*$(window).scroll(function () {
+$(window).scroll(function () {
     if ($("#menu").offset().top > 56) {
         $("#menu").addClass("azul");
 
@@ -6,7 +6,7 @@
         $("#menu").removeClass("azul");
     }
 
-});*/
+});
 
 
 

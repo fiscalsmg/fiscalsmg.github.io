@@ -34,6 +34,10 @@
     padding: 15px;
     
 }
+#menu.azul2{
+   background: turquoise;
+    
+}
 /*cambia colo de letra al hacer scrool*/
 #menu.azul a{
     color: black;
@@ -316,5 +320,7 @@ h2{
         background: rgb(156, 116, 97);
         padding: 10px;
     }
+   
     
 }
+

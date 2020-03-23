@@ -1,24 +1,47 @@
-
-/*efecto navbar*/
-$(window).scroll(function () {
+/*$(window).scroll(function () {
     if ($("#menu").offset().top > 56) {
         $("#menu").addClass("azul");
 
-    } else {
+    } else{
         $("#menu").removeClass("azul");
-
     }
 
+});*/
 
-});
+
+
+var contador=1;
+function navbar(){
+    /*efecto navbar*/
+    $(window).scroll(function () {
+        if ($("#menu").offset().top > 56 ) {
+            $("#menu").addClass("azul");
+            
+        }     
+    });
+}
+
 
 window.onload = function () {
     document.getElementById('nav-button').addEventListener("click", clic);
+    contador=1;
 }
+
+
 function clic() {
-    document.getElementById('menu').classList.add("celNav")
+    if (contador==1){
+        $("#menu").addClass("azul");
+        contador=0;  
+    }else{
+        contador=1;
+        navbar();
+        $("#menu").removeClass("azul");
+    }
+
+   
 }
-/*/efecto navbar*/
+
+/*/efecto navbar
 $(window).scroll(function(event) {
    // var scrollLeft = $(window).scrollLeft();
    let animacion = document.getElementById('animado');
@@ -28,4 +51,17 @@ $(window).scroll(function(event) {
     console.log("posicion "+posicionOnj1);
     console.log("tamPan "+tamPantalla);
     console.log("Vertical "+scrollTop);
-})
+
+
+
+
+    function main () {
+    $(window).scroll(function () {
+        if ($("#menu").offset().top > 56 && document.getElementById('nav-button').addEventListener("click", clic)) {
+            $("#menu").addClass("azul");
+           
+        }    
+    });
+
+}
+})*/

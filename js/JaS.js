@@ -1,11 +1,13 @@
 var contador = 1;
+navbar();
 
 function navbar() {
     /*efecto navbar*/
     $(window).scroll(function() {
         if ($("#menu").offset().top > 56) {
             $("#menu").addClass("azul");
-
+        } else {
+            $("#menu").removeClass("azul");
         }
     });
 }

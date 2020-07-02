@@ -4,94 +4,111 @@
     margin: 0;
 }*/
 
-#carrusel{
+#carrusel {
     padding: 0;
-    margin: 0; 
-    
+    margin: 0;
 }
-.navbar-collapse ul li a{
+
+.navbar-collapse ul li a {
     margin: 0px 20px;
     font-weight: 600;
 }
 
-#menu{
-    color:#D7C8C1;
+#menu {
+    color: #D7C8C1;
     transition: all 1s linear;
     padding: 15px;
     z-index: 100;
     margin: 0;
-}   
-.cardS1{
+}
+
+.cardS1 {
     transition: all 0.5s ease;
 }
-.cardS1:hover{
-    transform: translate(-5px,-10px);
+
+.cardS1:hover {
+    transform: translate(-5px, -10px);
     box-shadow: 5px 2px 10px rgb(5, 5, 5);
 }
+
+
 /*estilo del nav en navegador */
-#menu.azul{
-    background: linear-gradient(to bottom, rgb(105, 95, 95),rgb(230, 232, 235)); /*color degradado*/
+
+#menu.azul {
+    background: linear-gradient(to bottom, rgb(105, 95, 95), rgb(230, 232, 235));
+    /*color degradado*/
     padding: 15px;
-    
 }
-#menu.azul2{
-   background: turquoise;
-    
+
+#menu.azul2 {
+    background: turquoise;
 }
+
+
 /*cambia colo de letra al hacer scrool*/
-#menu.azul a{
+
+#menu.azul a {
     color: black;
 }
-#menu.azul button{
+
+#menu.azul button {
     border-color: black;
-   
 }
+
 
 /*estilo nav en el celular*/
-.celNav{
-    background: linear-gradient(to bottom,rgb(105, 95, 95),rgb(230, 232, 235));/*color degradado*/
-    
+
+.celNav {
+    background: linear-gradient(to bottom, rgb(105, 95, 95), rgb(230, 232, 235));
+    /*color degradado*/
 }
 
-.estilonav a:hover{
+.estilonav a:hover {
     background: rgba(127, 169, 233, 0.1);
-
 }
 
-.estilonav a{
+.estilonav a {
     color: #ffffff;
 }
-#menu a{
+
+#menu a {
     color: white;
 }
-.estilotrabajo a{
+
+.estilotrabajo a {
     color: black;
 }
-.estilotrabajo a:hover{
+
+.estilotrabajo a:hover {
     /*background: rgba(173, 8, 8, 0.1);*/
     color: rgb(226, 153, 43);
-
 }
+
+
 /*animacion de galeria de imagenes*/
 
-.op{
-   opacity: .9;
+.op {
+    opacity: .9;
 }
 
-.aparece{
+.aparece {
     opacity: 0;
     transform: all 0.5s;
 }
+
+
 /*--------*/
 
-.contenedor-imagenes .imagen{
+.contenedor-imagenes .imagen {
     position: relative;
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0, .75);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
 }
-.imagen img{
+
+.imagen img {
     object-fit: cover;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -101,94 +118,115 @@
     transition: .5s ease;
     overflow: hidden;
 }
-.overlay h2{
-    color:rgba(201, 172, 172, 0.75);
+
+.overlay h2 {
+    color: rgba(201, 172, 172, 0.75);
     font-weight: 300;
     font-size: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     text-align: center;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
+
 /*estilo galeria*/
-.imagen:hover .overlay{
+
+.imagen:hover .overlay {
     height: 100%;
     cursor: pointer;
 }
+
+
 /*recursos*/
+
 .hr-estilo {
     border-top: 2px solid rgb(163, 161, 161)
 }
 
+
 /*Section 3*/
-.cardS3{
- width: 150px;   
- height: 150px;
- display:block; /*Centrar imagen*/
- margin:auto; /*centrar imagen*/
- object-fit: cover; /*imagen corresponde al div*/
-    
+
+.cardS3 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    /*Centrar imagen*/
+    margin: auto;
+    /*centrar imagen*/
+    object-fit: cover;
+    /*imagen corresponde al div*/
 }
 
+
 /*Efecto paralax*/
-.paralax_completo{
+
+.paralax_completo {
     width: 100%;
     height: 100vh;
-    background-image: url(../imag/2.jpg);
+    background-image: url(../imag/33.jpg);
     /*estilo imagen*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     /*//estilo imagen*/
     /*efecto en css*/
-    background-attachment: fixed;/*deja fija la img pero los demas elementos se pueden mover*/
+    background-attachment: fixed;
+    /*deja fija la img pero los demas elementos se pueden mover*/
     /*centrar de titulo con flexbox*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 /*div del texto*/
-.texto-hero{
+
+.texto-hero {
     background: #111;
     padding: 18px;
     width: 320px;
     text-align: center;
     color: #ffffff;
-
 }
-h2{
+
+h2 {
     font-size: 30px;
     font-weight: 300;
 }
-.center{
+
+.center {
     max-width: 1100px;
     width: 90%;
     overflow: hidden;
     margin: auto;
     text-align: center;
 }
-.espacio{
+
+.espacio {
     padding: 30px 0 60px 0;
 }
-.espacio h2{
+
+.espacio h2 {
     text-align: center;
     padding-top: 30px;
 }
-.espacio p{
+
+.espacio p {
     text-align: justify;
 }
-.paralaxChico{
+
+.paralaxChico {
     height: 450px;
-    background-image: url(../imag/3.jpg);
+    background-image: url(../imag/33.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
-.paralaxChico h2{
+.paralaxChico h2 {
     display: flex;
     height: inherit;
     justify-content: center;
@@ -197,11 +235,12 @@ h2{
     font-weight: 400;
 }
 
-.texto{
+.texto {
     background: #ccc;
     height: 190px;
 }
-.texto h2{
+
+.texto h2 {
     text-align: center;
     color: #000000;
     display: flex;
@@ -209,20 +248,26 @@ h2{
     justify-content: center;
     align-items: center;
 }
+
+
 /**/
 
+
 /*footer*/
-.footerFis{
+
+.footerFis {
     width: 100%;
     height: auto;
     margin: auto;
 }
-.footerIconos{
+
+.footerIconos {
     width: 100%;
     height: auto;
     margin: auto;
 }
-.footerIconos ul li{
+
+.footerIconos ul li {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -230,97 +275,106 @@ h2{
     border-radius: 100%;
     background: rgb(244, 247, 240);
 }
-.footerIconos ul li:hover{
+
+.footerIconos ul li:hover {
     background: rgb(56, 87, 116);
 }
 
-.footerIconos ul li a{
+.footerIconos ul li a {
     font-size: 25px;
-    line-height: 45px; /*posicion de los iconos*/
+    line-height: 45px;
+    /*posicion de los iconos*/
     /*display: block;*/
-}   
-.footerMenu{
+}
+
+.footerMenu {
     width: 100%;
     height: auto;
     margin: auto;
     margin-top: 20px;
 }
-.footerMenu ul{
+
+.footerMenu ul {
     margin: 0px;
     padding: 0px;
 }
-.footerMenu ul li{
+
+.footerMenu ul li {
     display: inline-block;
-    margin: 0px 20px; /*Separacion de objetos*/
+    margin: 0px 20px;
+    /*Separacion de objetos*/
 }
-.footerMenu ul li a{
+
+.footerMenu ul li a {
     color: #fff;
     text-transform: uppercase;
-    text-decoration: none;/*quita hiperbinculo*/
-    outline: none;/*quita hiperbinculo*/
+    text-decoration: none;
+    /*quita hiperbinculo*/
+    outline: none;
+    /*quita hiperbinculo*/
 }
-.footerMenu ul li a:hover{
+
+.footerMenu ul li a:hover {
     color: rgb(56, 87, 116);
 }
 
-.footerBoton{
+.footerBoton {
     width: 100%;
     height: auto;
-    margin:auto;
+    margin: auto;
     background: rgb(244, 247, 240);
     padding: 5px;
-
 }
-.footerBoton p{
+
+.footerBoton p {
     font-weight: 600;
     font-size: 14px;
     color: rgb(12, 12, 12);
     letter-spacing: 1px;
 }
-.footerBoton p a{
+
+.footerBoton p a {
     font-weight: 600;
     font-size: 14px;
     color: rgb(12, 12, 12);
 }
 
-.footerBoton p a:hover{
+.footerBoton p a:hover {
     color: rgb(56, 87, 116);
-    text-decoration: none;/*quita hiperbinculo*/
-    outline: none;/*quita hiperbinculo*/
+    text-decoration: none;
+    /*quita hiperbinculo*/
+    outline: none;
+    /*quita hiperbinculo*/
 }
 
 
 /*tamaño cellular*/
 
 @media (max-width: 767px) {
-    footer .footerMenu ul{ 
+    footer .footerMenu ul {
         list-style: none;
         margin: 0;
         padding: 8px;
         display: inline-block;
     }
-    footer .footerMenu ul li{
-	width: 150px;
-	height: 30px;
-	margin: 0;
-	padding: 0;
+    footer .footerMenu ul li {
+        width: 150px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
     }
-    footer .footerIconos ul{ 
+    footer .footerIconos ul {
         list-style: none;
         margin: 0;
         padding: 8px;
         display: inline-block;
-        
     }
-    footer .footerIconos ul li{
-	margin: 0;
-	padding: 0;
+    footer .footerIconos ul li {
+        margin: 0;
+        padding: 0;
     }
-    #menu.azul{
+    #menu.azul {
         background: rgb(156, 116, 97);
         padding: 10px;
     }
-   
-    
 }
-
